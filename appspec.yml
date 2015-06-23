@@ -14,7 +14,7 @@ permissions:
 hooks:
    BeforeInstall:
    # - location: scripts/installapache.sh
-   #   runas: root
+   #   runas: root vvvv
     - location: scripts/startapache.sh
       runas: root
    AfterInstall:
