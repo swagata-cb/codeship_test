@@ -1,7 +1,8 @@
-#cd /
+cd /
 pwd
-#cd /home/swagata/codeship_test
+cd /home/swagata/codeship_test
 pwd
+bundle
 
 
 
