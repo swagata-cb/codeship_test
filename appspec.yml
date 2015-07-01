@@ -12,8 +12,12 @@ permissions:
      type:
        - file
 hooks:
-      AfterInstall:
-       - location: scripts/bundle.rb
+        DownloadBundle:
+	- location: scripts/createbackup.sh
+         timeout: 300
+         runas: root
+	AfterInstall:
+        - location: scripts/bundle.rb
          timeout: 300
          runas: root
    
