@@ -12,13 +12,13 @@ permissions:
      type:
        - file
 hooks:
-   BeforeInstall:
+   #BeforeInstall:
    # - location: scripts/installapache.sh ccc
    #   runas: root vvvv
-    - location: scripts/startapache.sh
-      runas: root
-   AfterInstall:
-    - location: scripts/bundle.rb
-      runas: root
-    - location: scripts/restartapache.sh
-      runas: root
+    #- location: scripts/startapache.sh
+    #  runas: root
+   #AfterInstall:
+    #- location: scripts/bundle.rb
+    #  runas: root
+    #- location: scripts/restartapache.sh
+#runas: root
