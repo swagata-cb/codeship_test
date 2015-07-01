@@ -1,6 +1,6 @@
 cd /
 pwd
-cd /home/swagata/codeship_test
+cd /home/ubuntu/codeship_test
 pwd
 bundle
 
