@@ -1,10 +1,10 @@
 version: 0.0
 os: linux
 files:
-   - source: /home/ubuntu
-     destination: /home/ubuntu
+   - source: /home/ubuntu/codeship_test
+     destination: /home/ubuntu/codeship_test
 permissions:
-   - object: /home/ubuntu
+   - object: /home/ubuntu/codeship_test
      pattern: "**"
      owner: root
      group: root
@@ -13,5 +13,7 @@ permissions:
        - file
 hooks:
       AfterInstall:
-    - location: /scripts/bundle.rb
+    - location: scripts/bundle.rb
+      timeout: 300
+      runas: root
    
