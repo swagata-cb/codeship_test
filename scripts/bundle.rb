@@ -1,4 +1,7 @@
-cd /
+#cd /
 pwd
-cd /home/ubuntu/codeship_test
+#cd /home/swagata/codeship_test
+pwd
+
+
 
