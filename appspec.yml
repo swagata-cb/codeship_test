@@ -1,10 +1,10 @@
 version: 0.0
 os: linux
 files:
-   - source: /
-     destination: /var/www/html
+   - source: /home/ubuntu
+     destination: /home/ubuntu
 permissions:
-   - object: /var/www/html
+   - object: /home/ubuntu
      pattern: "**"
      owner: root
      group: root
@@ -17,8 +17,9 @@ hooks:
    #   runas: root vvvv
     #- location: scripts/startapache.sh
     #  runas: root
-   #AfterInstall:
-    #- location: scripts/bundle.rb
+   AfterInstall:
+    - location: ./scripts/bundle.rb
     #  runas: root
     #- location: scripts/restartapache.sh
+
 #runas: root
