@@ -13,7 +13,7 @@ permissions:
        - file
 hooks:
       AfterInstall:
-    - location: scripts/bundle.rb
-      timeout: 300
-      runas: root
+       - location: scripts/bundle.rb
+         timeout: 300
+         runas: root
    
