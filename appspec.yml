@@ -17,7 +17,7 @@ hooks:
       timeout: 300
       runas: root
   AfterInstall: 
-    - location: scripts/bundle.rb
+    - location: scripts/bundle.sh
       timeout: 300
       runas: root
     - location: scripts/restartpassenger.sh
