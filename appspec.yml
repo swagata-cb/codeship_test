@@ -20,7 +20,4 @@ hooks:
     - location: scripts/bundle.sh
       timeout: 300
       runas: root
-    - location: scripts/restartpassenger.sh
-      timeout: 300
-      runas: root
-  
+    
