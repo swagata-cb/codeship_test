@@ -4,10 +4,10 @@ files:
    - source: /
      destination: /home/ubuntu/codeship_test
 permissions:
-   - object: /home/ubuntu/codeship_test
+   - object: /home/ubuntu/
      pattern: "**"
-     type:
-       - file
+     mode: 775
+     
 hooks:
   BeforeInstall:
     - location: scripts/createbackup.sh
